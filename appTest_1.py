@@ -6,8 +6,7 @@ Created on Thu Feb 20 20:34:00 2025
 """
 
 import streamlit as st
-import sklearn 
-import joblib
+from sklearn  import joblib
 import pandas as pd
 
 
