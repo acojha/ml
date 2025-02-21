@@ -76,7 +76,7 @@ df_pred['education'] = df_pred['education'].apply(transform)
 
 # Load the saved model for prediction
 #rf_model = joblib.load('rf_model_pkl')
-with open('\rf_model_pkl' , 'rb') as file:
+with open('rf_model_pkl' , 'rb') as file:
     rf_model = pickle.load(file)
 
 prediction = rf_model.predict(df_pred)
