@@ -6,7 +6,8 @@ Created on Thu Feb 20 20:34:00 2025
 """
 
 import streamlit as st
-from sklearn  import joblib
+#import joblib
+import pickle
 import pandas as pd
 
 
@@ -74,8 +75,12 @@ df_pred['education'] = df_pred['education'].apply(transform)
 
 
 # Load the saved model for prediction
-model = joblib.load('fhs_rf_model.pkl')
-prediction = model.predict(df_pred)
+# model = joblib.load('c:/users/acojh/.spyder-py3/fhs_rf_model.pkl')
+with open('rf_model_pkl' , 'rb') as file:
+    rf_model = pickle.load(file)
+
+prediction = rf_model.predict(df_pred)
+
 
 st.write(df_pred)
     
