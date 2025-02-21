@@ -1,5 +1,2 @@
-streamlit
-pandas
-numpy
 sklearn
 joblib
