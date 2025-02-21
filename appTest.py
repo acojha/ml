@@ -6,8 +6,8 @@ Created on Thu Feb 20 18:20:00 2025
 """
 
 import pandas as pd
-#import joblib
-import pickle
+import joblib
+#import pickle
 from sklearn.model_selection import train_test_split
 from imblearn.over_sampling import RandomOverSampler
 from sklearn.ensemble import RandomForestClassifier
@@ -36,6 +36,6 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"Random Forest Model Accuracy: {accuracy * 100:.2f}%")
 
 # save the classification model
-#joblib.dump(rf_model, 'fhs_rf_model.pkl')
-with open('rf_model_pkl', 'wb') as files:
-    pickle.dump(rf_model, files)
+joblib.dump(rf_model, 'rf_model_pkl')
+#with open('rf_model_pkl', 'wb') as files:
+    #pickle.dump(rf_model, files)
