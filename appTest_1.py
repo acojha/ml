@@ -7,7 +7,7 @@ Created on Thu Feb 20 20:34:00 2025
 
 import streamlit as st
 #import joblib
-from sklearn import pickle
+import pickle
 import pandas as pd
 
 
@@ -75,6 +75,7 @@ df_pred['education'] = df_pred['education'].apply(transform)
 
 # Load the saved model for prediction
 #rf_model = joblib.load('rf_model_pkl')
+'''
 with open('rf_model_pkl' , 'rb') as file:
     rf_model = pickle.load(file)
 
@@ -89,4 +90,4 @@ if btn:
 
     else:
         st.write('<p class="big-font">You are likely to develop heart disease in 10 years.</p>',unsafe_allow_html=True)
-        
+   '''     
