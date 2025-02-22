@@ -7,7 +7,7 @@ Created on Thu Feb 20 20:34:00 2025
 
 import streamlit as st
 #import joblib
-import pickle
+from sklearn import pickle
 import pandas as pd
 
 
