@@ -53,7 +53,7 @@ df_pred['phq8'] = df_pred['phq8'].apply(transform)
 df_pred['phq9'] = df_pred['phq9'].apply(transform)
 
 # Load the saved model for prediction
-with open('C:/Users/acojh/.spyder-py3/svm_model_pkl' , 'rb') as file:
+with open('svm_model_pkl' , 'rb') as file:
     svm_model = pickle.load(file)
 
 prediction = svm_model.predict(df_pred)
