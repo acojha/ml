@@ -59,4 +59,4 @@ with open('svm_model_pkl' , 'rb') as file:
 prediction = svm_model.predict(df_pred)
     
 if btn:
-  st.write("Your Depression Level: ", prediction)
+  st.write("Your Depression Level: ", prediction[0])
