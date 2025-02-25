@@ -9,7 +9,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-st.subheader("Quick Depression Assessment based on Pfizer Inc's PHQ-9")
+st.subheader("Quick Depression Assessment (Pfizer Inc's PHQ-9)")
 
 st.html("<h3>How often have you been bothered by any of the following problems over the last TWO WEEKS?</h3>")
 #st.divider()
