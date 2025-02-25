@@ -11,7 +11,7 @@ import pandas as pd
 
 st.subheader("Quick Depression Assessment (Pfizer Inc's PHQ-9)")
 
-st.html("<h3>How often have you been bothered by any of the following problems over the last TWO WEEKS?</h3>")
+st.html("<h3>Over the last TWO WEEKS, how often have you faced any of the following problems?</h3>")
 #st.divider()
 col1, col2, col3 = st.columns(3)
 
