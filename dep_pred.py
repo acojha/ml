@@ -26,7 +26,7 @@ phq6 = col3.selectbox("6.Feeling failure, bad about yourself",["Not at all", "Se
 
 phq7 = col1.selectbox("7.Trouble concentrating on things, reading, watching TV",["Not at all", "Several days", "More than half the days", "Nearly every day"])
 phq8 = col2.selectbox("8.Moving or speaking slowly or being restless",["Not at all", "Several days", "More than half the days", "Nearly every day"])
-phq9 = col3.selectbox("9.Thoughts of self-harm or suicide",["Not at all", "Several days", "More than half the days", "Nearly every day"])
+phq9 = col3.selectbox("9.Thought of self-harm or suicide",["Not at all", "Several days", "More than half the days", "Nearly every day"])
 
 btn=st.button('Predict', type="primary")
 st.divider()
