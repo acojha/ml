@@ -9,9 +9,9 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-st.caption("Patient Health Questionnair (PHQ-9) based on Pfizer Inc")
+st.subheader("Quick Depression Assessment based on Pfizer Inc's PHQ-9")
 
-st.html("<h3>How often have you been bothered by any of the following problems over the last 2 weeks?</h3>")
+st.html("<h3>How often have you been bothered by any of the following problems over the last TWO WEEKS?</h3>")
 #st.divider()
 col1, col2, col3 = st.columns(3)
 
