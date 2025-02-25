@@ -59,9 +59,9 @@ with open('svm_model_pkl' , 'rb') as file:
 prediction = svm_model.predict(df_pred)
     
 if btn:
-if(prediction[0]=='Normal')
+if(prediction=='Normal')
   st.write("Your are a NORMAL person")
-elif(prediction[0]=='Mild')
+elif(prediction=='Mild')
   st.write("You have MILD depression! Be Watchful!")
 elif(prediction[0]=='Moderate')
   st.write("You have MODERATE depression! Consider visiting a Doctor.")
