@@ -67,7 +67,7 @@ if btn:
      st.write("You have MODERATE depression! Consider visiting a Doctor.")
   elif(prediction[0]=='High'):
      st.write("You have HIGH Depressive Disorder! Visit a doctor for Active Treatment!")
-  elif(predictio[0]=='Severe'):
+  elif(prediction[0]=='Severe'):
      st.write("You have SEVERE Depresive Disorder! You need IMMEDIATE Attention and Treatment!")
 
 
