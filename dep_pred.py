@@ -60,14 +60,14 @@ prediction = svm_model.predict(df_pred)
     
 if btn:
   if(prediction[0]=='Normal'):
-     st.write("Your are a NORMAL person")
+     st.html("<h3>Your are a <b>NORMAL</b> person</h3>")
   elif(prediction[0]=='Mild'):
-     st.write("You have MILD depression! Be Watchful!")
+     st.html("You have <b>MILD</b> depression! Be Watchful!")
   elif(prediction[0]=='Moderate'):
-     st.write("You have MODERATE depression! Consider visiting a Doctor.")
+     st.html("You have <b>MODERATE</b> depression! Consider visiting a Doctor.")
   elif(prediction[0]=='High'):
-     st.write("You have HIGH Depressive Disorder! Visit a doctor for Active Treatment!")
+     st.html("You have <b>HIGH</b> Depressive Disorder! Visit a DOCTOR for Counselling and Active Treatment!")
   elif(prediction[0]=='Severe'):
-     st.write("You have SEVERE Depresive Disorder! You need IMMEDIATE Attention and Treatment!")
+     st.html("You have <b>SEVERE</b> Depresive Disorder! You need IMMEDIATE Medical Attention and Critical Care!")
 
 
