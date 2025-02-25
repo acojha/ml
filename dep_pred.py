@@ -12,7 +12,7 @@ import pandas as pd
 st.subheader("Quick Depression Assessment (Pfizer Inc's PHQ-9)")
 
 st.html("<h3>Over the last TWO WEEKS, how often have you faced any of the following problems?</h3>")
-#st.divider()
+
 col1, col2, col3 = st.columns(3)
 
 # getting user input
@@ -29,7 +29,7 @@ phq8 = col2.selectbox("8.Moving or speaking slowly or being restless",["Not at a
 phq9 = col3.selectbox("9.Thoughts of self-harm or suicide",["Not at all", "Several days", "More than half the days", "Nearly every day"])
 
 btn=st.button('Predict', type="primary")
-
+st.divider()
 df_pred = pd.DataFrame([[phq1,phq2,phq3,phq4,phq5,phq6,phq7,phq8,phq9]],columns= ['phq1','phq2','phq3','phq4','phq5','phq6','phq7','phq8','phq9'])
 
 def transform(data):
@@ -59,4 +59,4 @@ with open('svm_model_pkl' , 'rb') as file:
 prediction = svm_model.predict(df_pred)
     
 if btn:
-  st.write("<b>Your Depression Level: </b>", prediction, unsafe_allow_html=True)
+  st.caption("Your Depression Level: ", prediction)
