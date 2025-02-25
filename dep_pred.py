@@ -59,15 +59,15 @@ with open('svm_model_pkl' , 'rb') as file:
 prediction = svm_model.predict(df_pred)
     
 if btn:
-if(prediction=='Normal')
-  st.write("Your are a NORMAL person")
-elif(prediction=='Mild')
-  st.write("You have MILD depression! Be Watchful!")
-elif(prediction[0]=='Moderate')
-  st.write("You have MODERATE depression! Consider visiting a Doctor.")
-elif(prediction[0]=='High')
-  st.write("You have HIGH Depressive Disorder! Visit a doctor for Active Treatment!")
-elif(predictio[0]=='Severe')
-  st.write("You have SEVERE Depresive Disorder! You need IMMEDIATE Attention and Treatment!")
+  if(prediction[0]=='Normal'):
+     st.write("Your are a NORMAL person")
+  elif(prediction[0]=='Mild'):
+     st.write("You have MILD depression! Be Watchful!")
+  elif(prediction[0]=='Moderate'):
+     st.write("You have MODERATE depression! Consider visiting a Doctor.")
+  elif(prediction[0]=='High'):
+     st.write("You have HIGH Depressive Disorder! Visit a doctor for Active Treatment!")
+  elif(predictio[0]=='Severe'):
+     st.write("You have SEVERE Depresive Disorder! You need IMMEDIATE Attention and Treatment!")
 
 
