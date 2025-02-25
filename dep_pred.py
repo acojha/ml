@@ -60,7 +60,7 @@ prediction = svm_model.predict(df_pred)
     
 if btn:
   if(prediction[0]=='Normal'):
-     st.html("<h3>Your are a <b>NORMAL</b> person</h3>")
+     st.html("Your are a <b>NORMAL</b> person")
   elif(prediction[0]=='Mild'):
      st.html("You have <b>MILD</b> depression! Be Watchful!")
   elif(prediction[0]=='Moderate'):
